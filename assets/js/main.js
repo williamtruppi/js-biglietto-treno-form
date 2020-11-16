@@ -2,6 +2,8 @@
 var btnGenera = document.getElementById('btn_genera');
 var btnAnnulla = document.getElementById('btn_annulla');
 
+document.getElementById("travel_ticket").style.display = "none";
+
 btnGenera.addEventListener("click", function (){
   var userNameInput = document.getElementById("username");
   var userKilometersInput = document.getElementById("distance");
@@ -41,6 +43,8 @@ btnGenera.addEventListener("click", function (){
   ticketWagon.innerHTML = wagonNumber;
   ticketCpCode.innerHTML = cpCode;
   ticketPrice.innerHTML = finalPrice;
+
+  document.getElementById("travel_ticket").style.display = "block";
 
 
 });
