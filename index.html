@@ -14,32 +14,43 @@
     <section id="userData">
       <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
       <!-- apertura ticket data -->
-      <div id="ticket_data" class="d-flex">
-  
-        <!-- User Full Name -->
-        <div class="user_name d-flex">
-          <label for=""> Nome e Cognome</label>
-          <input type="text" name="fullname" id="full">
-        </div>
-  
-        <!-- User Kilometers -->
-        <div class="kilometers d-flex">
-          <label for="">Kilometri da percorrere</label>
-          <input type="number">
-        </div>
+      <div id="form_ticket">
 
-        <!-- User Age -->
-        <div class="age d-flex">
-          <label for="">Fascia d'età</label>
-          <select name="" id="User_age">
-            <option value="">Minorenne</option>
-            <option value="">Maggiorenne</option>
-            <option value="">Over 65</option>
-          </select>
-        </div>
+        <!-- apertura form top -->
+        <div class="form_top d-flex">
+
+          <!-- User Full Name -->
+          <div class="user_name d-flex">
+            <label for=""> Nome e Cognome</label>
+            <input type="text" name="fullname" id="full">
+          </div>
+    
+          <!-- User Kilometers -->
+          <div class="kilometers d-flex">
+            <label for="">Kilometri da percorrere</label>
+            <input type="number">
+          </div>
   
+          <!-- User Age -->
+          <div class="age d-flex">
+            <label for="">Fascia d'età</label>
+            <select name="" id="User_age">
+              <option value="">Minorenne</option>
+              <option value="">Maggiorenne</option>
+              <option value="">Over 65</option>
+            </select>
+          </div>
+
+        </div>
+        <!-- chiusura form top -->
+
+        <div class="form_bottom d-flex">
+          <button id="btn_genera">Genera</button>
+          <button id="btn_annulla">Annulla</button>
+        </div>
       </div>
       <!-- chiusura ticket data -->
+
     </section>
     <!-- chiusura section USERDATA -->
 

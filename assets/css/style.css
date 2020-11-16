@@ -21,10 +21,20 @@ h1{
   text-align: center;
 }
 
-#ticket_data{
+#form_ticket{
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form_top{
   justify-content: space-around;
 }
 
 .user_name, .kilometers, .age{
   flex-direction: column;
+}
+
+.form_bottom{
+  margin: 20px 0;
+  justify-content: space-evenly;
 }
