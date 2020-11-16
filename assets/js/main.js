@@ -49,9 +49,18 @@ btnGenera.addEventListener("click", function (){
   ticketDiscount.innerHTML = userAge;
   ticketWagon.innerHTML = wagonNumber;
   ticketCpCode.innerHTML = cpCode;
-  ticketPrice.innerHTML = finalPrice + " €";
+  ticketPrice.innerHTML = finalPrice.toFixed(2) + " €";
 
   // la struttura del biglietto viene resa nuovamente visibile
   document.getElementById("travel_ticket").style.display = "block";
 
+});
+
+btnAnnulla.addEventListener("click", function (){
+  
+  // la struttura del biglietto viene resa nuovamente NON VISIBILE
+  document.getElementById("travel_ticket").style.display = "none";
+  document.getElementById("username").value = "";
+  document.getElementById("distance").value = "";
+  document.getElementById("user_age").value = "";
 });

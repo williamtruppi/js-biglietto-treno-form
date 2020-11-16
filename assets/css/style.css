@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Oxygen', sans-serif;
 }
 
 /* classi utility */
@@ -17,36 +18,76 @@
 
 /* ticket data */
 
-h1{
+h1, h2{
   text-align: center;
+  margin: 20px 0;
 }
 
 #form_ticket{
-  border: 1px solid black;
+  padding: 20px 40px;
   border-radius: 10px;
+  box-shadow: 0px 0px 9px 2px rgba(50, 50, 50, 0.54);
+  font-size: 20px;
 }
+
+/* form top */
 
 .form_top{
   margin-top: 20px;
   justify-content: space-around;
 }
 
+.form_top input, .form_top select{
+  font-size: 20px;
+  width: 60%;
+  text-align: center;
+}
+
 .user_name, .kilometers, .age{
   flex-direction: column;
+  align-items: center;
+  flex-basis: 33%;
 }
+
+/* form bottom */
 
 .form_bottom{
   margin: 20px 0;
   justify-content: space-evenly;
 }
 
+.form_bottom button{
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
 /* travel ticket */
 
+#travel_ticket{
+  padding: 20px;
+  box-shadow: 0px 0px 9px 2px rgba(50, 50, 50, 0.54);
+  font-size: 20px;
+}
+
 .ticket_table{
-  justify-content: space-around;
+  margin-top: 20px;
+  justify-content: space-between;
+  border: 1px solid #808080;
 }
 
 .ticket_box{
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  flex-basis: 25%;
+}
+
+.ticket_box:nth-child(1){
+  background-color: #808080;
+}
+
+span{
+  margin-top: 50px;
 }

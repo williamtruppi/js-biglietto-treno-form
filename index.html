@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
@@ -28,7 +30,7 @@
           <!-- User Kilometers -->
           <div class="kilometers d-flex">
             <label for="">Kilometri da percorrere</label>
-            <input type="number" name="km" id="distance">
+            <input type="number" name="km" id="distance" min="1">
           </div>
   
           <!-- User Age -->
@@ -54,9 +56,12 @@
     </section>
     <!-- chiusura section USERDATA -->
 
+    <h2>IL TUO BIGLIETTO</h2>
     <!-- apertura section TRAVEL_TICKET -->
     <section id="travel_ticket">
-      <h1>IL TUO BIGLIETTO</h1>
+      <h3>DETTAGLIO PASSEGGERI</h3>
+
+      <!-- apertura TICKET TABLE -->
       <div class="ticket_table d-flex">
         <div class="ticket_box d-flex">
           <h4>NOME PASSEGGERO</h4>
@@ -78,10 +83,9 @@
           <h4>Costo biglietto</h4>
           <span id="ticket_price"></span>
         </div>
-        
-        
-          
       </div>
+      <!-- chiusura TICKET TABLE -->
+
     </section>
     <!-- chiusura section TRAVEL_TICKET -->
 
