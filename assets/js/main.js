@@ -13,17 +13,34 @@ btnGenera.addEventListener("click", function (){
   
   console.log(userName, userKilometers, userAge);
 
-  var ticketPrice = 0.21;
+  var price = 0.21;
   var finalPrice;
 
   if (userAge == "minorenne"){
-    finalPrice = (ticketPrice * userKilometers) - ((ticketPrice * userKilometers) * 0.20);
+    finalPrice = (price * userKilometers) - ((price * userKilometers) * 0.20);
     console.log(finalPrice);
   } else if (userAge == "over65") {
-    finalPrice = (ticketPrice * userKilometers) - ((ticketPrice * userKilometers) * 0.40);
+    finalPrice = (price * userKilometers) - ((price * userKilometers) * 0.40);
     console.log(finalPrice);
   } else {
-    finalPrice = ticketPrice * userKilometers;
+    finalPrice = price * userKilometers;
     console.log(finalPrice);
   }
+
+  var ticketName = document.getElementById("ticket_name");
+  var ticketDiscount = document.getElementById("ticket_discount");
+  var ticketWagon = document.getElementById("ticket_wagon");
+  var ticketCpCode = document.getElementById("cp_code");
+  var ticketPrice = document.getElementById("ticket_price");
+
+  var wagonNumber = Math.floor(Math.random() * 9) + 1;
+  var cpCode = Math.floor(Math.random() * (100000 - 90000)) + 90000;
+
+  ticketName.innerHTML = userName;
+  ticketDiscount.innerHTML = userAge;
+  ticketWagon.innerHTML = wagonNumber;
+  ticketCpCode.innerHTML = cpCode;
+  ticketPrice.innerHTML = finalPrice;
+
+
 });
