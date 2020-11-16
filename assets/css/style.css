@@ -12,7 +12,7 @@
 
 .container{
   width: 80%;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 
 /* ticket data */
@@ -27,6 +27,7 @@ h1{
 }
 
 .form_top{
+  margin-top: 20px;
   justify-content: space-around;
 }
 
@@ -37,4 +38,15 @@ h1{
 .form_bottom{
   margin: 20px 0;
   justify-content: space-evenly;
+}
+
+/* travel ticket */
+
+.ticket_table{
+  justify-content: space-around;
+}
+
+.ticket_box{
+  flex-direction: column;
+  align-items: center;
 }

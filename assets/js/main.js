@@ -2,9 +2,13 @@
 var btnGenera = document.getElementById('btn_genera');
 var btnAnnulla = document.getElementById('btn_annulla');
 
-document.getElementById("travel_ticket").style.display = "none";
+//struttura dei biglietto di viaggio nascosta temporaneamente
+// document.getElementById("travel_ticket").style.display = "none";
 
+//istruzioni da eseguire alla pressione del tasto GENERA
 btnGenera.addEventListener("click", function (){
+
+  // assegnazione alle variabili del contenuto degli input
   var userNameInput = document.getElementById("username");
   var userKilometersInput = document.getElementById("distance");
   var userAgeInput = document.getElementById("user_age");
@@ -15,9 +19,11 @@ btnGenera.addEventListener("click", function (){
   
   console.log(userName, userKilometers, userAge);
 
+  // inizializzazione variabili prezzo biglietto
   var price = 0.21;
   var finalPrice;
 
+  // calcolo del costo del biglietto
   if (userAge == "minorenne"){
     finalPrice = (price * userKilometers) - ((price * userKilometers) * 0.20);
     console.log(finalPrice);
@@ -29,6 +35,7 @@ btnGenera.addEventListener("click", function (){
     console.log(finalPrice);
   }
 
+  // assegnazione del contenuto della tabella alle rispettive variabili
   var ticketName = document.getElementById("ticket_name");
   var ticketDiscount = document.getElementById("ticket_discount");
   var ticketWagon = document.getElementById("ticket_wagon");
@@ -42,9 +49,9 @@ btnGenera.addEventListener("click", function (){
   ticketDiscount.innerHTML = userAge;
   ticketWagon.innerHTML = wagonNumber;
   ticketCpCode.innerHTML = cpCode;
-  ticketPrice.innerHTML = finalPrice;
+  ticketPrice.innerHTML = finalPrice + " €";
 
+  // la struttura del biglietto viene resa nuovamente visibile
   document.getElementById("travel_ticket").style.display = "block";
-
 
 });
