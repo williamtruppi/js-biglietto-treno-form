@@ -11,8 +11,19 @@ btnGenera.addEventListener("click", function (){
   var userKilometers = userKilometersInput.value;
   var userAge = userAgeInput.value;
   
-  console.log(userName);
-  console.log(userKilometers);
-  console.log(userAge);
+  console.log(userName, userKilometers, userAge);
 
+  var ticketPrice = 0.21;
+  var finalPrice;
+
+  if (userAge == "minorenne"){
+    finalPrice = (ticketPrice * userKilometers) - ((ticketPrice * userKilometers) * 0.20);
+    console.log(finalPrice);
+  } else if (userAge == "over65") {
+    finalPrice = (ticketPrice * userKilometers) - ((ticketPrice * userKilometers) * 0.40);
+    console.log(finalPrice);
+  } else {
+    finalPrice = ticketPrice * userKilometers;
+    console.log(finalPrice);
+  }
 });
