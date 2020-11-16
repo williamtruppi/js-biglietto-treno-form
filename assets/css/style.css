@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* classi utility */
+
+.d-flex{
+  display: flex;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ticket data */
+
+h1{
+  text-align: center;
+}
+
+#ticket_data{
+  justify-content: space-around;
+}
+
+.user_name, .kilometers, .age{
+  flex-direction: column;
+}
