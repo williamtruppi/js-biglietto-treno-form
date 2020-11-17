@@ -3,7 +3,7 @@ var btnGenera = document.getElementById('btn_genera');
 var btnAnnulla = document.getElementById('btn_annulla');
 
 //struttura dei biglietto di viaggio nascosta temporaneamente
-// document.getElementById("travel_ticket").style.display = "none";
+document.getElementById("travel_ticket").style.display = "none";
 
 //istruzioni da eseguire alla pressione del tasto GENERA
 btnGenera.addEventListener("click", function (){
